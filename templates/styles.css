@@ -7,7 +7,8 @@
   box-shadow: 0 0 4px 1px #00000033;
 }
 
-.card-body {
+.btn-container {
+  padding: 1em 0;
   display: flex;
   align-items: center;
   justify-content: center;
