@@ -6,3 +6,25 @@
 .card {
   box-shadow: 0 0 4px 1px #00000033;
 }
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-link {
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  color: white;
+  background-color: #5ebae4;
+  text-decoration: none;
+  box-shadow: 0 0 2px 1px #00000033;
+  transition: all 200ms;
+}
+
+.card-link:hover {
+  color: white;
+  box-shadow: 0 0 5px 2px #00000033;
+  transform: translateY(-2px);
+}
