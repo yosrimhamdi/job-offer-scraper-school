@@ -1,0 +1,23 @@
+{
+  "name": "job-offer-scraper-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bs.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.7"
+  },
+  "scripts": {
+    "start": "node bs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosrimhamdi/job-offer-scraper-school.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosrimhamdi/job-offer-scraper-school/issues"
+  },
+  "homepage": "https://github.com/yosrimhamdi/job-offer-scraper-school#readme"
+}
