@@ -29,3 +29,11 @@
   box-shadow: 0 0 5px 2px #00000033;
   transform: translateY(-2px);
 }
+
+.cc-intro
+{
+  background: url(https://mdbootstrap.com/img/Photos/new-templates/search-box/img5.jpg) center center fixed no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+

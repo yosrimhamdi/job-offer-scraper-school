@@ -1,205 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-      crossorigin="anonymous"
-    />
-    <title>Page accueil</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand bg-dark">
-      <a href="#" class="nav-link text-light text-uppercase"
-        >Job Scraping Website</a
-      >
-      <div class="navbar-collapse justify-content-between">
-        <div></div>
-        <form action="#" method="post" class="form-inline">
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Tapez votre recherche..."
-            />
-            <div class="input-group-append">
-              <button type="button" class="btn bg-light">
-                <i class="fas fa-search text-muted"></i>
-              </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Style CSS-->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <title>Job Find | Home </title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand bg-dark">
+    <a href="#" class="nav-link text-light text-uppercase">Job Scraping Website</a>
+    <div class="navbar-collapse justify-content-between">
+      <div></div>
+      <div>
+        <ul class="nav justify-content-end list-unstyled d-flex">
+          <li class="ms-4 fs-5"><a class="text-light" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="ms-4 fs-5"><a class="text-light" href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="ms-4 fs-5"><a class="text-light" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="intro">
+    <div class="cc-intro container-fluid bg-image h-100 my-5">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0, 0.5);">
+        <div class="container">
+          <p class="h2 mb-4 text-white">The best free stock photos & videos <br> shared by
+            talented creators.</p>
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-12 mb-4">
+                  <div class="input-group">
+                    <div class="form-outline flex-fill">
+                      <input type="search" id="form1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form1">Search for free photos and videos</label>
+                      <div class="form-helper pt-2"><span class="font-weight-bold">Suggested:</span>
+                        <a href="#!" class="text-black-50">spring,</a>
+                        <a href="#!" class="text-black-50">natural,</a>
+                        <a href="#!" class="text-black-50">outdoors,</a>
+                        <a href="#!" class="text-black-50">forest,</a>
+                        <a href="#!" class="text-black-50">cactus,</a>
+                        <a href="#!" class="text-black-50">flowers,</a>
+                        <a href="#!" class="text-black-50">more</a>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
-      </div>
-    </nav>
-
-    <!-- List of jobs -->
-    <section class="container-fluid row justify-content-between">
-      <!-- Card 1 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="5661112.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Card 2 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="5661112.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
+  <!-- List of jobs -->
+  <section class="container-fluid row justify-content-between my-5">
+    <!-- Card 1 -->
+    <div class="card my-3" style="width: 18rem">
+      <img src="5661112.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
       </div>
-
-      <!-- Card 3 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="5661112.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="5661112.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pagination -->
-    <div class="container">
-      <div class="row">
-        <div class="col"></div>
-
-        <div class="col">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-              <li class="page-item"><a class="page-link" href="#">9</a></li>
-              <li class="page-item"><a class="page-link" href="#">10</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="col"></div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+      <div class="btn-container">
+        <a href="#" class="card-link">Card link</a>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="container-fluid bg-dark position-absolute mb-0 mt-3">
-      <footer
-        class="
-          d-flex
-          flex-wrap
-          justify-content-between
-          align-items-center
-          py-3
-          my-4
-          border-top
-        "
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="#" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
-            <i class="fab fa-bootstrap text-light"></i>
-          </a>
-          <span class="text-light">&copy; 2021 Company, Inc</span>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#"><i class="fab fa-facebook"></i></a>
-          </li>
+    <!-- Card 2 -->
+    <div class="card my-3" style="width: 18rem">
+      <img src="5661112.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+      <div class="btn-container">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card my-3" style="width: 18rem">
+      <img src="5661112.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+      <div class="btn-container">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card my-3" style="width: 18rem">
+      <img src="5661112.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+      <div class="btn-container">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+
+      <div class="col">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="merriweather bg-dark text-light position-absolute mt-3 mb-0 w-100">
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Privacy policy</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
         </ul>
+        <p class="text-center">© 2021 Université Internationale de Tunis</p>
       </footer>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
