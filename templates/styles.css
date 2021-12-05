@@ -1,6 +1,7 @@
 .navbar {
   padding-right: 1em;
   padding-left: 1em;
+  margin-bottom: 0;
 }
 
 .card {
@@ -32,8 +33,17 @@
 
 .cc-intro
 {
-  background: url(https://mdbootstrap.com/img/Photos/new-templates/search-box/img5.jpg) center center fixed no-repeat;
-  background-size: cover;
-  height: 800px;
+  background: url(img/image.jpg) center center no-repeat;
+  height: 600px;
+  z-index: 99;
 }
 
+.logo
+{
+  width: 90px;
+}
+
+.bbt
+{
+  margin-bottom: 65px;
+}
