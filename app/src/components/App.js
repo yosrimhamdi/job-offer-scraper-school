@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from './Header';
 import Search from './Search';
-import Jobs from './Jobs';
+import Jobs from './Jobs/Jobs';
 import Footer from './Footer';
 
 const App = () => {
