@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node bs.js",
-    "server": "python manage.py runserver"
+    "server": "cd server && python manage.py runserver"
   },
   "repository": {
     "type": "git",
