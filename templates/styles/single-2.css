@@ -1,0 +1,236 @@
+body {
+  padding: 0;
+  margin: 0;
+  /*    background-color: rgb(245,246,247);*/
+  font-family: montserrat;
+  transition: 3s ease-in-out;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+h4.title {
+  color: #555;
+  font-weight: 600;
+}
+.left-bar,
+.right-bar {
+  width: 25%;
+  padding-left: 15px;
+}
+.left-bar h4.header {
+  color: #777;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: #f7f7f7;
+}
+.left-bar .filter {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  padding-left: 15px;
+}
+.left-bar .filter .wrapper {
+  margin-top: 3%;
+}
+.container .title {
+  width: 25%;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  margin-right: 3%;
+  width: 18px;
+  height: 18px;
+  background-color: #d5d5d5;
+  cursor: pointer;
+}
+label {
+  color: #777;
+  font-size: 14px;
+  font-family: montserrat;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+input[type='checkbox']::after {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 18px;
+  color: white;
+  display: none;
+  content: '\f00c';
+}
+input[type='checkbox']:hover {
+  background-color: #a5a5a5;
+}
+input[type='checkbox']:checked {
+  background-color: #5bcd3e;
+}
+input[type='checkbox']:checked:after {
+  display: block;
+}
+/*MAP*/
+.map__image {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.map__image path {
+  fill: #a4ced2;
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+.map__image path:hover {
+  fill: #3538d2;
+  cursor: pointer;
+}
+.map__image .gouvernorat {
+  font-weight: 500;
+  color: #777;
+}
+.right-bar {
+  width: 75%;
+  padding-top: 15px;
+}
+.right-bar .top {
+  display: flex;
+  background-color: #f7f7f7;
+  justify-content: space-between;
+}
+.right-bar .top .grid {
+  display: inline-block;
+  padding-left: 15px;
+}
+.right-bar .top .grid svg {
+  margin-top: 10px;
+  display: inline;
+  margin-right: 10px;
+  border: 1px solid #eeeeee;
+  fill: #444444;
+  width: 5%;
+  transition: 0.5s ease;
+}
+.right-bar .top .grid svg.active {
+  background-color: #5bcd3e;
+}
+.right-bar .top .grid svg:hover {
+  background-color: #5bcd3e;
+  cursor: pointer;
+}
+
+.right-bar .sort {
+  height: 10%;
+  margin-top: 2%;
+  width: 30%;
+  right: 0;
+}
+.right-bar select {
+  color: #777;
+  padding: 6px 6px;
+}
+.sort-by {
+  font-size: 14px;
+  color: #777777;
+  padding-right: 22px;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0 !important;
+  background: #ffffff;
+  background-image: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+  color: #777777;
+  cursor: pointer;
+}
+.right-bar .body {
+  display: flex;
+}
+.right-bar .body .card {
+  background-color: rgba(220, 220, 220, 0.3);
+  height: 250px;
+  margin-top: 2%;
+  width: 35%;
+  margin-right: 2%;
+}
+section {
+  width: 100%;
+}
+.container__card {
+  margin-top: 5%;
+  height: 100%;
+}
+.card__user {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  top: 0;
+  background-color: white;
+  display: block;
+  box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+  border: 1px solid #ccc;
+  overflow: hidden;
+  transition: 0.4s ease-in;
+  margin-bottom: 2%;
+}
+.card__user:hover {
+  box-shadow: 0 15px 30px rgba(104, 101, 22, 0.8);
+}
+.card__user .content__card {
+  display: flex;
+  position: relative;
+}
+
+.card__img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-left: 5%;
+  margin-top: 8%;
+
+  background-color: rgb(94, 94, 32);
+}
+
+.card__img h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.content__card .card__text {
+  width: 75%;
+  margin-top: 3%;
+  margin-left: 4%;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(72, 72, 72);
+}
+.content__card .card__text p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bouton button {
+  outline: none;
+  background-color: #6923d0;
+  padding: 10px 10px;
+  border: none;
+  font-family: Poppins;
+  color: white;
+  transition: 0.4s ease-in;
+}
+.bouton button:hover {
+  background-color: darkviolet;
+}
+
+/* ========== MEDIA QUERIES ==========*/
+/* For small devices reduce search*/
