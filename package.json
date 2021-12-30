@@ -7,8 +7,9 @@
     "browser-sync": "^2.27.7"
   },
   "scripts": {
-    "start": "node bs.js",
-    "server": "cd server && python manage.py runserver"
+    "start": "npm-run-all -p server app",
+    "server": "cd server/ && python manage.py runserver",
+    "app": "cd app/ && npm start"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/yosrimhamdi/job-offer-scraper-school/issues"
   },
-  "homepage": "https://github.com/yosrimhamdi/job-offer-scraper-school#readme"
+  "homepage": "https://github.com/yosrimhamdi/job-offer-scraper-school#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
