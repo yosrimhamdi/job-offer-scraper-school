@@ -1,1 +1,3 @@
 node_modules/
+server/web/__pycache__/*
+server/webscrapping/__pycache__/*
