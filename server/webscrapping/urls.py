@@ -19,5 +19,5 @@ from django.conf.urls import include,url
 from web import views
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^jobs/',include('web.urls'))
+    url("jobs/",include('web.urls'))
 ]

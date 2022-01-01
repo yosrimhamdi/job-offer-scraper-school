@@ -8,5 +8,16 @@
 </head>
 <body>
     <h1>La page vient de se charger</h1>
+    <p>********************</p>
+    {% for i in data %}
+
+    <p>Emploi : {{ i.emploi }}</p>
+    <p>Adresse : {{ i.adresse }}</p>
+    <p>********************</p>
+
+    {% endfor %}
+
+    
+
 </body>
 </html>

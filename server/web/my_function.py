@@ -6,7 +6,7 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class='',p_class=''):
     i=0
     j=1
     database=dict()
-    ma_list=[{'emploi':'nom','artists':'nul'}]
+    ma_list=[]
     while(j<number):
         mes_donnees=(phrase(mon_url,str(j)))
         j+=1
