@@ -1,276 +1,539 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Style CSS-->
-    <link rel="stylesheet" href="/styles/index.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <!-- icon -->
-    <link
-      rel="shortcut icon"
-      href="/images/icons/favicon.svg"
-      type="image/x-icon"
-    />
-    <title>Job Find | Home</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="modif-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand ms-2" href="#"
-          ><img
-            src="/images/icons/logo.svg"
-            alt="logo"
-            class="img-fluid"
-            width="85"
-        /></a>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between me-2"
-          id="collapsibleNavId"
-        >
-          <div></div>
-          <div>
-            <ul class="navbar justify-content-center list-unstyled d-flex">
-              <li class="ms-4 fs-5">
-                <a class="soci text-light" href="#"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li class="ms-4 fs-5">
-                <a class="soci text-light" href="#"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </li>
-              <li class="ms-4 fs-5">
-                <a class="soci text-light" href="#"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <section class="cc-intro d-flex justify-content-center align-items-center">
-      <div class="container">
-        <p class="h2 mb-4 text-white text-center">
-          Trouvez l'emploi de vos rêves <br />
-          parmi les emplois disponible en Tunisie.
-        </p>
-        <div class="card">
-          <div class="card-body p-4">
-            <div class="row">
-              <div class="col-12 mb-4">
-                <div class="input-group">
-                  <select class="bbt btn btn-outline-secondary form-select">
-                    <option selected>Gouvernorat</option>
-                    <option value="1">Ariana</option>
-                    <option value="2">Béja</option>
-                    <option value="3">Ben Arous</option>
-                    <option value="4">Bizerte</option>
-                    <option value="5">Gabès</option>
-                    <option value="6">Gafsa</option>
-                    <option value="7">Jendouba</option>
-                    <option value="8">Kasserine</option>
-                  </select>
-                  <div class="form-outline flex-fill">
-                    <input
-                      type="search"
-                      id="form1"
-                      class="form-control form-control-lg"
-                    />
-                    <label class="form-label text-muted" for="form1"
-                      >Recherche des offres d'emploi gratuitement</label
-                    >
-                    <div class="form-helper pt-2">
-                      <span class="font-weight-bold">Suggestion :</span>
-                      <a href="#" class="text-decoration-none">Acupuncteur</a>,
-                      <a href="#" class="text-decoration-none">Acteur</a>,
-                      <a href="#" class="text-decoration-none">Consultant IT</a
-                      >,
-                      <a href="#" class="text-decoration-none">Contrôleur</a>,
-                      <a href="#" class="text-decoration-none">Tailleur</a>,
-                      <a href="#" class="text-decoration-none">Zoologiste</a>,
-                      <a href="#" class="text-decoration-none">Testeur</a>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-primary bbt">
-                    <i class="fas fa-search"></i>
-                  </button>
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jobs Find | TN </title>
+    <meta name="description" content="job find tunisie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/price_rangs.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Chargement First -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt="logo">
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- List of jobs -->
-    <section class="container-fluid row justify-content-between my-5">
-      <!-- Card 1 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="/images/company-logo.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="/images/company-logo.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="/images/company-logo.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="card my-3" style="width: 18rem">
-        <img src="/images/company-logo.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="btn-container">
-          <a href="#" class="card-link">Card link</a>
-        </div>
-      </div>
-    </section>
-    <!-- Pagination -->
-    <div class="container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-              <li class="page-item"><a class="page-link" href="#">9</a></li>
-              <li class="page-item"><a class="page-link" href="#">10</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col"></div>
-      </div>
     </div>
-    <!-- Footer -->
-    <footer class="modif-footer text-light position-absolute mt-3 mb-0 w-100">
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-light">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-light">Privacy policy</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-light">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-light">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-light">About</a>
-            </li>
-          </ul>
-          <p class="text-center">© 2021 Université Internationale de Tunis</p>
-        </footer>
-      </div>
+
+    <!-- Chargement First -->
+    <header>
+        <!-- Header -->
+        <div class="header-area header-transparrent">
+            <div class="headder-top header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-2">
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="menu-wrapper">
+                                <!-- Main-menu -->
+                                <div class="main-menu">
+                                    <nav class="d-none d-lg-block">
+                                        <ul id="navigation">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="#">Nos partenaires</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                            <li><a href="#apropos">A propos</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <!-- Header-login -->
+                                <div class="header-btn d-none f-right d-lg-block">
+                                    <a href="#" class="btn head-btn1">S'inscrire</a>
+                                    <a href="#" class="btn head-btn2">Connexion</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <!-- slider Area Start-->
+        <div class="slider-area">
+            <!-- Mobile Menu -->
+            <div class="slider-active">
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="hero__caption">
+                                    <h1>Trouver l'emploi de votre rêve en un clic</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search Box -->
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <!-- form -->
+                                <form action="#" class="search-box">
+                                    <div class="input-form">
+                                        <input type="text" placeholder="Nom de l'emploi à chercher">
+                                    </div>
+                                    <div class="select-form">
+                                        <div class="select-itms">
+                                            <select name="select" id="select1">
+                                                <option value="">Zone de recherche</option>
+                                                <option value="">Tunis</option>
+                                                <option value="">Sousse</option>
+                                                <option value="">Sfax</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search-form">
+                                        <a href="#">Recherche</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Jobs by categorie -->
+        <div class="our-services section-pad-t30">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center">
+                            <span>Tous les emplois en Tunisie</span>
+                            <h2>Parcourir les offres par categories</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-contnet-center">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-tour"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Design & Creative</a></h5>
+                                <span>(653)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-cms"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Design & Development</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-report"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Sales & Marketing</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-app"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Mobile Application</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-helmet"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Construction</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-high-tech"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Information Technology</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-real-estate"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Real Estate</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-content"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="job_listing.html">Content Writer</a></h5>
+                                <span>(658)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Btn -->
+                <!-- Section Button -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="browse-btn2 text-center mt-50">
+                            <a href="liste_jobs.html" class="border-btn2">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Share your CV -->
+        <div class="online-cv cv-bg section-overly pt-90 pb-120" data-background="assets/img/gallery/cv_bg.jpg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="cv-caption text-center">
+                            <p class="pera1">Laissez-vous trouver par des recruteurs en Tunisie</p>
+                            <p class="pera2">Partagez votre cv pour attirer des recruteurs vers vous.</p>
+                            <a href="#" class="border-btn2 border-btn4">Telecharger votre cv</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Recent job -->
+        <section class="featured-job-area feature-padding">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center">
+                            <span>Job recent</span>
+                            <h2>Dernières publications</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+
+                        <!-- single-job-content -->
+                        <div class="single-job-items mb-30">
+                            <div class="job-items">
+                                <div class="company-img">
+                                    <a href="job_details.html"><img src="assets/img/icon/job-list1.png" alt=""></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="#">
+                                        <h4>Digital Marketer</h4>
+                                    </a>
+                                    <ul>
+                                        <li>Creative Agency</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Ariana, Tunis</li>
+                                        <li>$3500 - $4000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items-link f-right">
+                                <a href="#">Disponible</a>
+                                <span>Il y a 7 min</span>
+                            </div>
+                        </div>
+
+                        <!-- single-job-content -->
+                        <div class="single-job-items mb-30">
+                            <div class="job-items">
+                                <div class="company-img">
+                                    <a href="#"><img src="assets/img/icon/job-list2.png" alt=""></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="#">
+                                        <h4>Community manager</h4>
+                                    </a>
+                                    <ul>
+                                        <li>Creative Agency</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Toto, Sousse</li>
+                                        <li>$3500 - $4000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items-link f-right">
+                                <a href="#">Disponible</a>
+                                <span>Il y a 20 min</span>
+                            </div>
+                        </div>
+
+
+                        <!-- single-job-content -->
+                        <div class="single-job-items mb-30">
+                            <div class="job-items">
+                                <div class="company-img">
+                                    <a href="#"><img src="assets/img/icon/job-list3.png" alt=""></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="#">
+                                        <h4>Developper PHP</h4>
+                                    </a>
+                                    <ul>
+                                        <li>Creative Agency</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Charguia, Tunis</li>
+                                        <li>$3500 - $4000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items-link f-right">
+                                <a href="#">Disponible</a>
+                                <span>Il y a 15 min</span>
+                            </div>
+                        </div>
+
+
+                        <!-- single-job-content -->
+                        <div class="single-job-items mb-30">
+                            <div class="job-items">
+                                <div class="company-img">
+                                    <a href="#"><img src="assets/img/icon/job-list4.png" alt=""></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="#">
+                                        <h4>Copywriter</h4>
+                                    </a>
+                                    <ul>
+                                        <li>Creative Agency</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Menzah 1, Tunis</li>
+                                        <li>$3500 - $4000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items-link f-right">
+                                <a href="#">Disponible</a>
+                                <span>Il y a 3 heures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Footer-->
+    <footer>
+        <div class="footer-area footer-bg footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <h4 id="apropos">A propos</h4>
+                                    <div class="footer-pera">
+                                        <p>JobsFind est une agence qui vous aide à trouver l'emploi en Tunisie grace à
+                                            son meilleur outil de recherche. Vous trouvez l'emploi de votre rêve en un
+                                            simple clic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4 id="contact">Contact</h4>
+                                <ul>
+                                    <li>
+                                        <p class="my-0 py-0">Address : Tunis Tunisie</p>
+                                    </li>
+                                    <li><a href="#">Phone : +216 111111</a></li>
+                                    <li><a href="#">Email : JobsFind@society.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Developpers Team</h4>
+                                <ul>
+                                    <li><a href="#">Omari Omari Kayumba</a></li>
+                                    <li><a href="#">Adama Kabore</a></li>
+                                    <li><a href="#">Yosri Mhamdi</a></li>
+                                    <li><a href="#">Banitongwa David</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Newsletter</h4>
+                                <div class="footer-pera footer-pera2">
+                                    <p>Recevez les dernières nouvelles en s'inscrivant à notre newsletter.</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form action="#" method="post" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email"
+                                                placeholder="Votre adresse email" class="placeholder hide-on-focus">
+
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm"><img
+                                                        src="assets/img/icon/form.png" alt=""></button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-10 col-lg-10 ">
+                            <div class="footer-copy-right">
+                                <p>Copyright &copy;<script>
+                                        document.write(new Date().getFullYear());
+                                    </script> Jobs Find Scraper - UIT</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="footer-social f-right">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+
+
+
+
+
+
+
+    <!-- JS here -->
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/price_rangs.js"></script>
+
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
 </html>
