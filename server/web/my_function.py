@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from bs4.element import SoupStrainer
 import requests
 
+
 def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class='',p_class=''): 
     i=0
     j=1
@@ -25,7 +26,7 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class='',p_class=''):
             company_name =job.find(p_class).text
 #            company_addresse=job.find(adresse,'span12 no-margin-left').text
             company_addresse=job.find(adresse,class_=class_adresse).text
-            ma_list.append({'emploi':company_name,'adresse':company_addresse.strip()})
+            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip()})
             
             #database.update(ma_list)
         
