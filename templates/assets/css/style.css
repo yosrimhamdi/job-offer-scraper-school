@@ -2503,6 +2503,7 @@ hr {
 .section-overly {
   position: relative;
   z-index: 0;
+  height: 100%;
 }
 
 .section-overly::before {
@@ -5769,8 +5770,13 @@ del {
 .slider-area {
   margin-top: -1px;
   background-image: url('../img/hero/h1_hero.jpg');
+<<<<<<< HEAD
   background-position: center;
   background-size: cover;
+=======
+  background-position-x: center;
+  background-position-y: -40px;
+>>>>>>> caa22db72da99a4858ea4feb90a793d83e5cd2a2
   background-repeat: no-repeat;
 }
 
@@ -7608,4 +7614,16 @@ form.search-box .search-form a {
   outline: 0;
   background: #242b5e;
   color: #fff;
+}
+
+.slider-area {
+  height: calc(100vh - 84px);
+}
+
+.slider-area .container {
+  transform: translateY(-70px);
+}
+
+header {
+  box-shadow: 2px 0 4px #00000033;
 }
