@@ -7613,3 +7613,7 @@ form.search-box .search-form a {
 .slider-area .container {
   transform: translateY(-70px);
 }
+
+header {
+  box-shadow: 2px 0 4px #00000033;
+}
