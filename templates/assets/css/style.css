@@ -5770,7 +5770,9 @@ del {
   margin-top: -1px;
   /* border: 1px solid red; */
   background-image: url('../img/hero/h1_hero.jpg');
-  background-position: center;
+  background-position-x: center;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
 }
 
 .slider-area .hero__caption {
@@ -7601,4 +7603,12 @@ form.search-box .search-form a {
   outline: 0;
   background: #242b5e;
   color: #fff;
+}
+
+.slider-area {
+  height: calc(100vh - 84px);
+}
+
+.slider-area .container {
+  transform: translateY(-70px);
 }
