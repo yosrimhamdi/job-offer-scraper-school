@@ -2503,6 +2503,7 @@ hr {
 .section-overly {
   position: relative;
   z-index: 0;
+  height: 100%;
 }
 
 .section-overly::before {
