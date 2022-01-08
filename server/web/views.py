@@ -1,4 +1,5 @@
 import json
+from bs4 import element
 from django.http.response import JsonResponse
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -62,5 +63,7 @@ def search(request):
             k=len(str(requete))
             if(y==len(ma_list)):
                 continuer=False
-
-    return HttpResponse(json.dumps(mot_trouve))
+    if(len(mot_trouve)==0):
+        return HttpResponse('Aucun Résultat pour '+requete)
+    else:
+        return HttpResponse(json.dumps(mot_trouve))
