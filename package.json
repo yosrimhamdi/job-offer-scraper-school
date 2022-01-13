@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/yosrimhamdi/job-offer-scraper-school/issues"
   },
-  "homepage": "https://github.com/yosrimhamdi/job-offer-scraper-school#readme"
+  "homepage": "https://github.com/yosrimhamdi/job-offer-scraper-school#readme",
+  "dependencies": {
+    "react-router-dom": "^6.2.1"
+  }
 }
