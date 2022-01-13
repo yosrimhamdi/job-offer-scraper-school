@@ -6348,15 +6348,11 @@ form.search-box .search-form a {
   font-family: 'Muli', sans-serif;
   color: #fff;
   text-transform: uppercase;
-  background-image: url('assets/img/hero/cv_bg.jpg');
-  background-position: center;
 }
 
 @media (max-width: 767px) {
   .online-cv .cv-caption .pera1 {
     margin-bottom: 25px;
-    background-image: url('assets/img/hero/cv_bg.jpg');
-    background-position: center;
   }
 }
 
@@ -7623,4 +7619,8 @@ form.search-box .search-form a {
 
 header {
   box-shadow: 2px 0 4px #00000033;
+}
+
+.cv-bg {
+  background-image: url('../img/hero/cv_bg.jpg');
 }
