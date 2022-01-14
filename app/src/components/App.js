@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import SearchResult from './SearchResult';
 import Home from './Home';
@@ -11,10 +11,10 @@ const App = () => {
     <Router>
       <Spinner />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search/:term" element={<SearchResult />} />
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/search/:term" component={SearchResult} />
+      </Switch>
     </Router>
   );
 };
