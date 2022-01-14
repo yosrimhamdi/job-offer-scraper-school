@@ -7640,3 +7640,8 @@ header {
 .cv-bg {
   background-image: url('../img/hero/cv_bg.jpg');
 }
+
+.newsletter-submit {
+  padding: 0;
+  height: 100%;
+}
