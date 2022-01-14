@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from './logo.png';
 
@@ -11,9 +12,9 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-lg-3 col-md-2">
                 <div className="logo">
-                  <a href="index.html">
+                  <Link to="/">
                     <img src={logo} alt="web site logo" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-9 col-md-9">
@@ -22,9 +23,9 @@ const Header = () => {
                     <nav className="d-none d-lg-block">
                       <ul id="navigation">
                         <li>
-                          <a href="index.html" className="text-decoration-none">
+                          <Link to="/" className="text-decoration-none">
                             Home
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <a href="#contact" className="text-decoration-none">
