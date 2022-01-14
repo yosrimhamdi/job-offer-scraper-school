@@ -1,5 +1,7 @@
 import React from 'react';
 
+import form from './form.png';
+
 const Footer = () => {
   return (
     <footer>
@@ -107,7 +109,7 @@ const Footer = () => {
                             id="newsletter-submit"
                             className="email_icon newsletter-submit button-contactForm"
                           >
-                            <img src="assets/img/icon/form.png" alt="" />
+                            <img src={form} alt="" />
                           </button>
                         </div>
                       </form>
