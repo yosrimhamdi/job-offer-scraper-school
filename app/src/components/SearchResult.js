@@ -19,7 +19,7 @@ const SearchResult = () => {
                         height="12px"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           fill="rgb(27, 207, 107)"
                           d="M7.778,12.000 L12.222,12.000 L12.222,10.000 L7.778,10.000 L7.778,12.000 ZM-0.000,-0.000 L-0.000,2.000 L20.000,2.000 L20.000,-0.000 L-0.000,-0.000 ZM3.333,7.000 L16.667,7.000 L16.667,5.000 L3.333,5.000 L3.333,7.000 Z"
                         />
@@ -57,7 +57,10 @@ const SearchResult = () => {
                     </label>
                     <label className="container">
                       Temps Partiel
-                      <input type="checkbox" checked="checked active" />
+                      <input
+                        type="checkbox"
+                        defaultChecked="defaultChecked active"
+                      />
                       <span className="checkmark"></span>
                     </label>
                     <label className="container">
@@ -99,7 +102,10 @@ const SearchResult = () => {
                     </label>
                     <label className="container">
                       2-3 ans
-                      <input type="checkbox" checked="checked active" />
+                      <input
+                        type="checkbox"
+                        defaultChecked="defaultChecked active"
+                      />
                       <span className="checkmark"></span>
                     </label>
                     <label className="container">
@@ -127,7 +133,10 @@ const SearchResult = () => {
                     </label>
                     <label className="container">
                       Aujourd'hui
-                      <input type="checkbox" checked="checked active" />
+                      <input
+                        type="checkbox"
+                        defaultChecked="defaultChecked active"
+                      />
                       <span className="checkmark"></span>
                     </label>
                     <label className="container">
