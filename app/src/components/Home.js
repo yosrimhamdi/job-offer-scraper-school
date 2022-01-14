@@ -1,9 +1,5 @@
 import React from 'react';
-
-import j1 from './job-list1.png';
-import j2 from './job-list2.png';
-import j3 from './job-list3.png';
-import j4 from './job-list4.png';
+import Job from './Job';
 
 const Home = () => {
   return (
@@ -235,117 +231,10 @@ const Home = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-10">
-              <div className="single-job-items mb-30">
-                <div className="job-items">
-                  <div className="company-img">
-                    <a href="job_details.html">
-                      <img src={j1} alt="" />
-                    </a>
-                  </div>
-                  <div className="job-tittle">
-                    <a href="#test">
-                      <h4>Digital Marketer</h4>
-                    </a>
-                    <ul>
-                      <li>Creative Agency</li>
-                      <li>
-                        <i className="fas fa-map-marker-alt"></i>Ariana, Tunis
-                      </li>
-                      <li>$3500 - $4000</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="items-link f-right">
-                  <a href="#test" className="text-decoration-none">
-                    Disponible
-                  </a>
-                  <span>Il y a 7 min</span>
-                </div>
-              </div>
-
-              <div className="single-job-items mb-30">
-                <div className="job-items">
-                  <div className="company-img">
-                    <a href="#test">
-                      <img src={j2} alt="" />
-                    </a>
-                  </div>
-                  <div className="job-tittle">
-                    <a href="#test">
-                      <h4>Community manager</h4>
-                    </a>
-                    <ul>
-                      <li>Creative Agency</li>
-                      <li>
-                        <i className="fas fa-map-marker-alt"></i>Toto, Sousse
-                      </li>
-                      <li>$3500 - $4000</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="items-link f-right">
-                  <a href="#test" className="text-decoration-none">
-                    Disponible
-                  </a>
-                  <span>Il y a 20 min</span>
-                </div>
-              </div>
-
-              <div className="single-job-items mb-30">
-                <div className="job-items">
-                  <div className="company-img">
-                    <a href="#test">
-                      <img src={j3} alt="" />
-                    </a>
-                  </div>
-                  <div className="job-tittle">
-                    <a href="#test">
-                      <h4>Developper PHP</h4>
-                    </a>
-                    <ul>
-                      <li>Creative Agency</li>
-                      <li>
-                        <i className="fas fa-map-marker-alt"></i>Charguia, Tunis
-                      </li>
-                      <li>$3500 - $4000</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="items-link f-right">
-                  <a href="#test" className="text-decoration-none">
-                    Disponible
-                  </a>
-                  <span>Il y a 15 min</span>
-                </div>
-              </div>
-
-              <div className="single-job-items mb-30">
-                <div className="job-items">
-                  <div className="company-img">
-                    <a href="#test">
-                      <img src={j4} alt="" />
-                    </a>
-                  </div>
-                  <div className="job-tittle">
-                    <a href="#test">
-                      <h4>Copywriter</h4>
-                    </a>
-                    <ul>
-                      <li>Creative Agency</li>
-                      <li>
-                        <i className="fas fa-map-marker-alt"></i>Menzah 1, Tunis
-                      </li>
-                      <li>$3500 - $4000</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="items-link f-right">
-                  <a href="#test" className="text-decoration-none">
-                    Disponible
-                  </a>
-                  <span>Il y a 3 heures</span>
-                </div>
-              </div>
+              <Job />
+              <Job />
+              <Job />
+              <Job />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import SearchResult from './SearchResult';
-import Home from './Home/Home';
+import Home from './Home';
 import Header from './Header';
 import Spinner from './Spinner';
 
