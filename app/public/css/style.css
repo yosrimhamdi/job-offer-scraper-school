@@ -5768,12 +5768,10 @@ del {
 }
 
 .slider-area {
-  margin-top: -1px;
   background-image: url('../img/hero/h1_hero.jpg');
   background-position: center;
   background-size: cover;
   background-position-x: center;
-  background-position-y: -40px;
   background-repeat: no-repeat;
 }
 
