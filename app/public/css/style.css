@@ -424,7 +424,7 @@ hr {
   top: 0;
   width: 101%;
   height: 101%;
-  background: #da2461;
+  background: #f30031;
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -7644,4 +7644,8 @@ header {
 .newsletter-submit {
   padding: 0;
   height: 100%;
+}
+
+.btn:hover {
+  color: white !important;
 }
