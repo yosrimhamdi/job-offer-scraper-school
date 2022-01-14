@@ -217,6 +217,9 @@ const SearchResult = (props) => {
                 <div className="single-wrap d-flex justify-content-center">
                   <nav aria-label="Page navigation example">
                     <ul className="pagination justify-content-start">
+                      <li className="page-item">
+                        <div className="page-link">&lt;</div>
+                      </li>
                       <li className="page-item active">
                         <a className="page-link" href="#test">
                           01
@@ -233,9 +236,7 @@ const SearchResult = (props) => {
                         </a>
                       </li>
                       <li className="page-item">
-                        <a className="page-link" href="#test">
-                          <span className="ti-angle-right"></span>
-                        </a>
+                        <div className="page-link">&gt;</div>
                       </li>
                     </ul>
                   </nav>

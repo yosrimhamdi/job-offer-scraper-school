@@ -7649,3 +7649,7 @@ header {
 .btn:hover {
   color: white !important;
 }
+
+.page-link {
+  cursor: pointer;
+}
