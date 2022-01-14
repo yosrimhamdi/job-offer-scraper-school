@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
+
 import Job from './Job';
 
-const SearchResult = () => {
+const SearchResult = (props) => {
+  const { term } = props.match.params;
+
+  useEffect(() => {
+    const getResult = async () => {
+      const response = await axios.get(
+        `http://localhost:8000/search?query=${term}`
+      );
+
+      console.log(response);
+    };
+
+    getResult();
+  }, [term]);
+
   return (
     <main>
       <div className="job-listing-area pt-5 pb-5">

@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import Job from './Job';
 
-const Home = () => {
+const Home = ({ history }) => {
+  const [term, setTerm] = useState('');
+
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    history.push(`/search/${term}`);
+  };
+
   return (
     <main>
       <div className="slider-area">
@@ -18,11 +27,13 @@ const Home = () => {
 
               <div className="row">
                 <div className="col-xl-8">
-                  <form action="#" className="search-box">
+                  <form onSubmit={onFormSubmit} className="search-box">
                     <div className="input-form">
                       <input
                         type="text"
                         placeholder="Nom de l'emploi à chercher"
+                        value={term}
+                        onChange={(e) => setTerm(e.target.value)}
                       />
                     </div>
                     <div className="select-form">
@@ -36,9 +47,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div className="search-form">
-                      <a href="#test" className="text-decoration-none">
-                        Recherche
-                      </a>
+                      <button type="submit">Recherche</button>
                     </div>
                   </form>
                 </div>
