@@ -47,7 +47,7 @@ const Home = ({ history }) => {
                       </div>
                     </div>
                     <div className="search-form">
-                      <button class="test" type="submit">
+                      <button class="search-button" type="submit">
                         Recherche
                       </button>
                     </div>
