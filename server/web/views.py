@@ -32,9 +32,6 @@ def search(request):
     obj=str(request.GET)
     requete=request.GET.get('query')
     
-    
-    
-    
     if not requete:
         message="Erreur Methode GET"
     else:

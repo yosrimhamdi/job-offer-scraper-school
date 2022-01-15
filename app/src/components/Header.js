@@ -1,55 +1,69 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import logo from './logo.png';
 
 const Header = () => {
   return (
-    <nav className="modif-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
-      <div className="container-fluid">
-        <a className="navbar-brand ms-2" href="#">
-          <img
-            src="/images/icons/logo.svg"
-            alt="logo"
-            className="img-fluid"
-            width="85"
-          />
-        </a>
-        <button
-          className="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="collapse navbar-collapse justify-content-between me-2"
-          id="collapsibleNavId"
-        >
-          <div></div>
-          <div>
-            <ul className="navbar justify-content-center list-unstyled d-flex">
-              <li className="ms-4 fs-5">
-                <a className="soci text-light" href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li className="ms-4 fs-5">
-                <a className="soci text-light" href="#">
-                  <i className="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li className="ms-4 fs-5">
-                <a className="soci text-light" href="#">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+    <header>
+      <div className="header-area header-transparrent">
+        <div className="headder-top header-sticky">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-3 col-md-2">
+                <div className="logo">
+                  <Link to="/">
+                    <img src={logo} alt="web site logo" />
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-9 col-md-9">
+                <div className="menu-wrapper">
+                  <div className="main-menu">
+                    <nav className="d-none d-lg-block">
+                      <ul id="navigation">
+                        <li>
+                          <Link to="/" className="text-decoration-none">
+                            Home
+                          </Link>
+                        </li>
+                        <li>
+                          <a href="#contact" className="text-decoration-none">
+                            Nos partenaires
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#contact" className="text-decoration-none">
+                            Contact
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#apropos" className="text-decoration-none">
+                            A propos
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <div className="header-btn d-none f-right d-lg-block">
+                    <a href="#contact" className="btn head-btn1">
+                      S'inscrire
+                    </a>
+                    <a href="#contact" className="btn head-btn2">
+                      Connexion
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

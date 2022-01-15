@@ -3,7 +3,7 @@ from bs4.element import SoupStrainer
 import requests
 
 
-def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,p_class): 
+def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,description,class_desc): 
     i=0
     j=1
     database=dict()
@@ -23,10 +23,20 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,p_class):
         #jobs=soup.find_all('div',class_="hpanel m-none m-b-xs joboffer-preview font-8 m-b-sm")
         for job in jobs:
             
-            company_name =job.find(p_class).text
+#            company_link=job.header.p_class.a['href']
+            company_link=job.find(link)['href']
+            company_description=job.find(description,class_=class_desc).text
+            company_name =job.find(name).text
+
 #            company_addresse=job.find(adresse,'span12 no-margin-left').text
             company_addresse=job.find(adresse,class_=class_adresse).text
-            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip()})
+           
+            
+#            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,
+#                            'entreprise':company_entreprise.strip(),'description':company_description.strip(), 'temps':company_time})
+#            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip(),'entreprise':company_entreprise.strip(),'time':company_time.strip()})
+            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip()})
+
             
             #database.update(ma_list)
         
@@ -71,6 +81,7 @@ def phrase(a,b):
     return str(a)+(b)
 def remove_space(a):
     return a.lstrip().rstrip()
+
 
 def concat_list():
     #post1=my_scraping('https://www.keejob.com/offres-emploi/?page=','div',5,'div','block_white_a post clearfix silver-job-block','h6')

@@ -1,18 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import SearchResult from './SearchResult';
+import Home from './Home';
 import Header from './Header';
-import Search from './Search';
-import Jobs from './Jobs/Jobs';
 import Footer from './Footer';
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <Search />
-      <Jobs />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/search/:term" component={SearchResult} />
+      </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 };
 
