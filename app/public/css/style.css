@@ -6639,7 +6639,7 @@ form.search-box .search-form a {
   }
 }
 
-.single-job-items .job-tittle a h4 {
+.job-title {
   color: #28395a;
   font-size: 24px;
   -webkit-transition: 0.4s;
