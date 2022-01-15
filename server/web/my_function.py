@@ -38,12 +38,16 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,descr
                 company_time=job.find(time,class_=time_link).text 
             except:
                 company_time='Temps non precisé'
+            try:
+                company_salaire=job.find(salaire,class_=class_salaire).text 
+            except:
+                company_salaire='Salaire Non specifié'
            
             
 #            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,
 #                            'entreprise':company_entreprise.strip(),'description':company_description.strip(), 'temps':company_time})
 #            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip(),'entreprise':company_entreprise.strip(),'time':company_time.strip()})
-            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip(),'agence':company_agence,'time':company_time})
+            ma_list.append({'emploi':company_name.strip(),'salaire': company_salaire.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip(),'agence':company_agence,'time':company_time})
 
             
             #database.update(ma_list)
@@ -78,11 +82,13 @@ def single_search(single,tag,tag_class,adresse,class_addresse,description, class
             company_agence=job.find(agence,class_=class_agence).text 
         except:
             company_agence='Agence non specifiée'
-
-
+        try:
+            company_time=job.find(time,class_=time_link).text 
+        except:
+            company_time='Temps non precisé'
 
             
-        ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description,'salaire':company_salaire,'agence':company_agence})
+        ma_list.append({'emploi':company_name.strip(),'time': company_time.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description,'salaire':company_salaire,'agence':company_agence})
     return ma_list
 
     if (len(ma_list)==0):
