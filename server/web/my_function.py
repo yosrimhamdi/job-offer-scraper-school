@@ -85,6 +85,6 @@ def remove_space(a):
 
 def concat_list():
     #post1=my_scraping('https://www.keejob.com/offres-emploi/?page=','div',5,'div','block_white_a post clearfix silver-job-block','h6')
-    post1=my_scraping('https://www.optioncarriere.tn/emplois-tunisie-123097.html?p=','article',5,'ul','location','job clicky','h2')
-    concatenation=post1
+    post2=my_scraping('https://www.optioncarriere.tn/emplois-tunisie-123097.html?p=','article',8,'ul','location','job clicky','h2','a','div','desc')
+    concatenation=post2
     return concatenation
