@@ -1,22 +1,20 @@
 import React from 'react';
-
-import i1 from './job-list1.png';
-import i2 from './job-list2.png';
-import i3 from './job-list3.png';
-import i4 from './job-list4.png';
-
-const images = [i1, i2, i3, i4];
+import { createAvatar } from '@dicebear/avatars';
+import * as style from '@dicebear/avatars-identicon-sprites';
 
 const Job = () => {
+  let svg = createAvatar(style, {
+    seed: 'custom-seed',
+  });
+
+  console.log(svg);
+
   return (
     <div className="single-job-items mb-30">
       <div className="job-items">
         <div className="company-img">
           <a href="#test">
-            <img
-              src={images[Math.floor(Math.random() * (3 - 0 + 1)) + 0]}
-              alt=""
-            />
+            <img src="test" alt="" />
           </a>
         </div>
         <div className="job-tittle job-tittle2">
