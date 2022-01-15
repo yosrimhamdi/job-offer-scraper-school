@@ -1,15 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import scraper from '../api/scraper';
 
 import Job from './Job';
 
 const Home = ({ history }) => {
   const [term, setTerm] = useState('');
+  const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    const getRecentJobs = async () => {
+      const response = await scraper.get('/');
+
+      setJobs(response.data.slice(0, 5));
+    };
+
+    getRecentJobs();
+  }, []);
 
   const onFormSubmit = (e) => {
     e.preventDefault();
 
     history.push(`/search/${term}`);
   };
+
+  const renderedJobs = jobs.map((job, i) => <Job key={i} job={job} />);
 
   return (
     <main>
@@ -241,12 +255,7 @@ const Home = ({ history }) => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-10">
-              <Job />
-              <Job />
-              <Job />
-              <Job />
-            </div>
+            <div className="col-xl-10">{renderedJobs}</div>
           </div>
         </div>
       </section>
