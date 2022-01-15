@@ -6611,7 +6611,7 @@ form.search-box .search-form a {
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
-  transition: 0.4s;
+  transition: 200ms;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6696,7 +6696,7 @@ form.search-box .search-form a {
 }
 
 .single-job-items:hover {
-  box-shadow: 0px 22px 57px 0px rgba(34, 41, 72, 0.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .single-job-items .job-items {
