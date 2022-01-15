@@ -6646,6 +6646,10 @@ form.search-box .search-form a {
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  max-width: 450px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .single-job-items .job-tittle a h4:hover {
