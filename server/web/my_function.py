@@ -24,7 +24,7 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,descr
         for job in jobs:
             
 #            company_link=job.header.p_class.a['href']
-            company_link=job.find(link)['href']
+            company_link= "https://www.optioncarriere.tn" + job.find(link)['href']
             company_description=job.find(description,class_=class_desc).text
             company_name =job.find(name).text
 
@@ -57,7 +57,7 @@ def single_search(single,tag,tag_class,adresse,class_addresse,description, class
     for job in jobs:
             
 #            company_link=job.header.p_class.a['href']
-        company_link=job.find(link)['href']
+        company_link="https://www.optioncarriere.tn" + job.find(link)['href']
         company_description=job.find(description,class_=class_desc).text
         company_name =job.find(name).text
 #            company_addresse=job.find(adresse,'span12 no-margin-left').text
