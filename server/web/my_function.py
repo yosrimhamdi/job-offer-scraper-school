@@ -3,7 +3,7 @@ from bs4.element import SoupStrainer
 import requests
 
 
-def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,description,class_desc): 
+def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,description,class_desc,agence,class_agence,time,time_link):
     i=0
     j=1
     database=dict()
@@ -30,12 +30,20 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,descr
 
 #            company_addresse=job.find(adresse,'span12 no-margin-left').text
             company_addresse=job.find(adresse,class_=class_adresse).text
+            try:
+                company_agence=job.find(agence,class_=class_agence).text 
+            except:
+                company_agence='Agence non specifiée'
+            try:
+                company_time=job.find(time,class_=time_link).text 
+            except:
+                company_time='Temps non precisé'
            
             
 #            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,
 #                            'entreprise':company_entreprise.strip(),'description':company_description.strip(), 'temps':company_time})
 #            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip(),'entreprise':company_entreprise.strip(),'time':company_time.strip()})
-            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip()})
+            ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description.strip(),'agence':company_agence,'time':company_time})
 
             
             #database.update(ma_list)
@@ -47,7 +55,7 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,descr
     return ma_list
  
 
-def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name,salaire,class_salaire):
+def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name,salaire,class_salaire,agence,class_agence):
 #def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name):
     ma_list=list()
     site="https://www.optioncarriere.tn/emploi-"+single+".html"
@@ -66,11 +74,15 @@ def single_search(single,tag,tag_class,adresse,class_addresse,description, class
             company_salaire=job.find(salaire,class_=class_salaire).text 
         except:
             company_salaire='Salaire Non specifié'
+        try:
+            company_agence=job.find(agence,class_=class_agence).text 
+        except:
+            company_agence='Agence non specifiée'
 
 
 
             
-        ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description,'salaire':company_salaire})
+        ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description,'salaire':company_salaire,'agence':company_agence})
     return ma_list
 
     if (len(ma_list)==0):
@@ -89,6 +101,6 @@ def remove_space(a):
 
 def concat_list():
     #post1=my_scraping('https://www.keejob.com/offres-emploi/?page=','div',5,'div','block_white_a post clearfix silver-job-block','h6')
-    post2=my_scraping('https://www.optioncarriere.tn/emplois-tunisie-123097.html?p=','article',8,'ul','location','job clicky','h2','a','div','desc')
+    post2=my_scraping('https://www.optioncarriere.tn/emplois-tunisie-123097.html?p=','article',10,'ul','location','job clicky','h2','a','div','desc','p','company','span','badge badge-r badge-s badge-icon')
     concatenation=post2
     return concatenation

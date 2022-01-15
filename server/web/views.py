@@ -35,6 +35,6 @@ def search(request):
     if not requete:
         message="Erreur Methode GET"
     else:
-        job=my_function.single_search(requete,"article",'job clicky','ul','location','div','desc','a','h2','ul','salary')
+        job=my_function.single_search(requete,"article",'job clicky','ul','location','div','desc','a','h2','ul','salary','p','company')
         
     return HttpResponse(json.dumps(job))
