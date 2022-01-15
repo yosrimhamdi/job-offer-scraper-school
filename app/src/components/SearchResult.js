@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react';
-import axios from 'axios';
 
 import Job from './Job';
+import scraper from '../api/scraper';
 
 const SearchResult = (props) => {
-  const { term } = props.match.params;
+  const { query } = props.match.params;
 
   useEffect(() => {
     const getResult = async () => {
-      const response = await axios.get(
-        `http://localhost:8000/search?query=${term}`
-      );
+      const response = await scraper.get('/search', {
+        params: { query },
+      });
 
       console.log(response);
     };
 
     getResult();
-  }, [term]);
+  }, [query]);
 
   return (
     <main>
