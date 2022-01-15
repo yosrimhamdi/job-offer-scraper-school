@@ -6646,7 +6646,7 @@ form.search-box .search-form a {
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  max-width: 450px;
+  max-width: 420px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
