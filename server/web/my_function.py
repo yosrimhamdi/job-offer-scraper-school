@@ -47,7 +47,7 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,name,link,descr
     return ma_list
  
 
-def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name):
+def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name,salaire,class_salaire):
 #def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name):
     ma_list=list()
     site="https://www.optioncarriere.tn/emploi-"+single+".html"
@@ -62,11 +62,15 @@ def single_search(single,tag,tag_class,adresse,class_addresse,description, class
         company_name =job.find(name).text
 #            company_addresse=job.find(adresse,'span12 no-margin-left').text
         company_addresse=job.find(adresse,class_=class_addresse).text
+        try:
+            company_salaire=job.find(salaire,class_=class_salaire).text 
+        except:
+            company_salaire='Salaire Non specifié'
 
 
 
             
-        ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description})
+        ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description,'salaire':company_salaire})
     return ma_list
 
     if (len(ma_list)==0):
