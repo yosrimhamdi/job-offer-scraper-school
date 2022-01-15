@@ -3,10 +3,10 @@ import { createAvatar } from '@dicebear/avatars';
 import * as style from '@dicebear/avatars-initials-sprites';
 
 const Job = ({ job }) => {
-  const { adresse, emploi, lien } = job;
+  const { adresse, emploi, lien, agence, time, salaire } = job;
 
   const companyAvatar = createAvatar(style, {
-    seed: 'creative agency',
+    seed: agence,
   });
 
   return (
@@ -24,18 +24,18 @@ const Job = ({ job }) => {
         <div className="job-tittle job-tittle2">
           <h4 className="job-title">{emploi}</h4>
           <ul>
-            <li>Creative Agency</li>
+            <li>{agence}</li>
             <li>
               <i className="fas fa-map-marker-alt"></i>
               {adresse}
             </li>
-            <li>$3500 - $4000</li>
+            <li>{salaire}</li>
           </ul>
         </div>
       </div>
       <div className="items-link items-link2 f-right">
         <div className="job-type">Temps Plein</div>
-        <span>7 hours ago</span>
+        <span>{time}</span>
       </div>
     </a>
   );
