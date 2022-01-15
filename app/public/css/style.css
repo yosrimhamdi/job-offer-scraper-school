@@ -6652,10 +6652,6 @@ form.search-box .search-form a {
   text-overflow: ellipsis;
 }
 
-.single-job-items .job-tittle a h4:hover {
-  color: #8b92dd;
-}
-
 .single-job-items .job-tittle ul li {
   display: inline-block;
   margin-right: 48px;
@@ -7668,4 +7664,14 @@ header {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 1px;
+}
+
+.job-t {
+  color: #8b92dd;
+  display: block;
+  border: 1px solid #8b92dd;
+  border-radius: 30px;
+  padding: 4px 33px;
+  text-align: center;
+  margin-bottom: 25px;
 }

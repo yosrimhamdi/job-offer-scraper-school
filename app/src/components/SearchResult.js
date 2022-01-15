@@ -14,7 +14,6 @@ const SearchResult = (props) => {
         params: { query },
       });
 
-      console.log(response);
       setJobs(response.data);
     };
 

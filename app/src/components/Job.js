@@ -22,9 +22,7 @@ const Job = ({ job }) => {
           dangerouslySetInnerHTML={{ __html: companyAvatar }}
         ></div>
         <div className="job-tittle job-tittle2">
-          <a href="#test">
-            <h4>{emploi}</h4>
-          </a>
+          <h4 className="job-title">{emploi}</h4>
           <ul>
             <li>Creative Agency</li>
             <li>
@@ -36,9 +34,7 @@ const Job = ({ job }) => {
         </div>
       </div>
       <div className="items-link items-link2 f-right">
-        <a href="#test" className="text-decoration-none">
-          Temps Plein
-        </a>
+        <div className="job-type">Temps Plein</div>
         <span>7 hours ago</span>
       </div>
     </a>
