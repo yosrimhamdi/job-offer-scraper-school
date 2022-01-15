@@ -1,22 +1,19 @@
 import React from 'react';
 import { createAvatar } from '@dicebear/avatars';
-import * as style from '@dicebear/avatars-identicon-sprites';
+import * as style from '@dicebear/avatars-initials-sprites';
 
 const Job = () => {
-  let svg = createAvatar(style, {
+  const companyAvatar = createAvatar(style, {
     seed: 'custom-seed',
   });
-
-  console.log(svg);
 
   return (
     <div className="single-job-items mb-30">
       <div className="job-items">
-        <div className="company-img">
-          <a href="#test">
-            <img src="test" alt="" />
-          </a>
-        </div>
+        <div
+          className="company-img"
+          dangerouslySetInnerHTML={{ __html: companyAvatar }}
+        ></div>
         <div className="job-tittle job-tittle2">
           <a href="#test">
             <h4>Digital Marketer</h4>

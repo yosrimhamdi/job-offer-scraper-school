@@ -7653,3 +7653,15 @@ header {
 .page-link {
   cursor: pointer;
 }
+
+.company-img {
+  width: 80px;
+  aspect-ratio: 1;
+  margin-right: 1em;
+}
+
+.company-img svg {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1px;
+}
