@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Job from './Job';
 import scraper from '../api/scraper';
 
 const SearchResult = (props) => {
+  const [jobs, setJobs] = useState([]);
+
   const { query } = props.match.params;
 
   useEffect(() => {
@@ -13,10 +15,13 @@ const SearchResult = (props) => {
       });
 
       console.log(response);
+      setJobs(response.data);
     };
 
     getResult();
   }, [query]);
+
+  const renderedJobs = jobs.map((job, i) => <Job key={i} job={job} />);
 
   return (
     <main>
@@ -186,7 +191,7 @@ const SearchResult = (props) => {
                   <div className="row">
                     <div className="col-lg-12">
                       <div className="count-job mb-35">
-                        <span>39, 782 tavaux trouvés</span>
+                        <span>{jobs.length} tavaux trouvés</span>
 
                         <div className="select-job-items">
                           <span>Trier par</span>
@@ -200,10 +205,7 @@ const SearchResult = (props) => {
                       </div>
                     </div>
                   </div>
-                  <Job />
-                  <Job />
-                  <Job />
-                  <Job />
+                  {renderedJobs}
                 </div>
               </section>
             </div>

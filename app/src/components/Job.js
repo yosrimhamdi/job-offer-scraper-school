@@ -2,13 +2,20 @@ import React from 'react';
 import { createAvatar } from '@dicebear/avatars';
 import * as style from '@dicebear/avatars-initials-sprites';
 
-const Job = () => {
+const Job = ({ job }) => {
+  const { adresse, emploi, lien } = job;
+
   const companyAvatar = createAvatar(style, {
-    seed: 'custom-seed',
+    seed: 'creative agency',
   });
 
   return (
-    <div className="single-job-items mb-30">
+    <a
+      href={lien}
+      target="_blank"
+      rel="noreferrer"
+      className="single-job-items mb-30"
+    >
       <div className="job-items">
         <div
           className="company-img"
@@ -16,24 +23,25 @@ const Job = () => {
         ></div>
         <div className="job-tittle job-tittle2">
           <a href="#test">
-            <h4>Digital Marketer</h4>
+            <h4>{emploi}</h4>
           </a>
           <ul>
             <li>Creative Agency</li>
             <li>
-              <i className="fas fa-map-marker-alt"></i>Athens, Greece
+              <i className="fas fa-map-marker-alt"></i>
+              {adresse}
             </li>
             <li>$3500 - $4000</li>
           </ul>
         </div>
       </div>
       <div className="items-link items-link2 f-right">
-        <a href="job_details.html" className="text-decoration-none">
+        <a href="#test" className="text-decoration-none">
           Temps Plein
         </a>
         <span>7 hours ago</span>
       </div>
-    </div>
+    </a>
   );
 };
 
