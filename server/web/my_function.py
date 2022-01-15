@@ -3,7 +3,7 @@ from bs4.element import SoupStrainer
 import requests
 
 
-def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class='',p_class=''): 
+def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class,p_class): 
     i=0
     j=1
     database=dict()
@@ -35,6 +35,34 @@ def my_scraping(mon_url,tag,number,adresse,class_adresse,d_class='',p_class=''):
         #    published_date=job.find('span',class_='sim_posted').span.text
         #return ma_list"""
     return ma_list
+ 
+
+def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name):
+#def single_search(single,tag,tag_class,adresse,class_addresse,description, class_desc,link, name):
+    ma_list=list()
+    site="https://www.optioncarriere.tn/emploi-"+single+".html"
+    html_text=requests.get(site).text
+    soup=BeautifulSoup(html_text,'lxml')
+    jobs=soup.find_all(tag,class_=tag_class)
+    for job in jobs:
+            
+#            company_link=job.header.p_class.a['href']
+        company_link=job.find(link)['href']
+        company_description=job.find(description,class_=class_desc).text
+        company_name =job.find(name).text
+#            company_addresse=job.find(adresse,'span12 no-margin-left').text
+        company_addresse=job.find(adresse,class_=class_addresse).text
+
+
+
+            
+        ma_list.append({'emploi':company_name.strip(),'adresse':company_addresse.strip(),'lien':company_link,'description':company_description})
+    return ma_list
+
+    if (len(ma_list)==0):
+        return "Aucun resultat pour "+single
+    else: 
+        return ma_list
     
 
 def Merge(dict1, dict2):
@@ -45,7 +73,7 @@ def remove_space(a):
     return a.lstrip().rstrip()
 
 def concat_list():
-#    post1=my_scraping('https://www.keejob.com/offres-emploi/?page=','div',2,'div','block_white_a post clearfix silver-job-block','h6')
-    post2=my_scraping('https://www.optioncarriere.tn/emplois-tunisie-123097.html?p=','article',2,'ul','location','job clicky','h2')
-    concatenation=post2
+    #post1=my_scraping('https://www.keejob.com/offres-emploi/?page=','div',5,'div','block_white_a post clearfix silver-job-block','h6')
+    post1=my_scraping('https://www.optioncarriere.tn/emplois-tunisie-123097.html?p=','article',5,'ul','location','job clicky','h2')
+    concatenation=post1
     return concatenation

@@ -27,43 +27,17 @@ def detail(request, job_id):
 #    job=tableau[3]
     return HttpResponse(json.dumps(job))
 def search(request):
+    
     mot_trouve=list()
     obj=str(request.GET)
     requete=request.GET.get('query')
+    
+    
+    
+    
     if not requete:
         message="Erreur Methode GET"
     else:
-        continuer=True
-        mot=''
-        k=len(str(requete))
-        y=0
-        i=0
-        ma_list=list()
-        addresse=list()
-        for job_list in my_function.concat_list():
-            ma_list.append((job_list['emploi']))
-            addresse.append((job_list['adresse']))
-#        message=my_function.concat_list().objects.filter(string__contains=requete)        
-#         message=requete.objects.filter(pk__in=my_function.concat_list())
-        #message=my_function.concat_list().get(addresse="Tunis")
-        while(continuer):
-            while(i<len(ma_list[y])):
-                chaine=ma_list[y]
-                mot=mot+chaine[i:k]
-                if(len(mot)==len(requete)):
-                    if(mot.upper()==requete.upper()):
-                        mot_trouve.append({'emploi':ma_list[y].strip(),'adresse':addresse[y].strip()})
-                        y+=1                   
-                i+=1
-                k+=1
-                mot=''
+        job=my_function.single_search(requete,"article",'job clicky','ul','location','div','desc','a','h2')
         
-            y+=1
-            i=0
-            k=len(str(requete))
-            if(y==len(ma_list)):
-                continuer=False
-    if(len(mot_trouve)==0):
-        return HttpResponse('Aucun Résultat pour '+requete)
-    else:
-        return HttpResponse(json.dumps(mot_trouve))
+    return HttpResponse(json.dumps(job))
