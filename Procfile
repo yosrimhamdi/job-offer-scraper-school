@@ -1,1 +1,1 @@
-python server/manage.py runserver
+web: python server/manage.py runserver
