@@ -1,1 +1,0 @@
-web: pip install -r server/requirements.txt && python server/manage.py runserver

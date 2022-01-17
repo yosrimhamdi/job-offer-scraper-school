@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import scraper from '../api/scraper';
+import { Link } from 'react-router-dom';
 
+import scraper from '../api/scraper';
 import Job from './Job';
 
 const Home = ({ history }) => {
@@ -84,7 +85,10 @@ const Home = ({ history }) => {
             </div>
           </div>
           <div className="row d-flex justify-contnet-center">
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <Link
+              to="/search/design"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-tour"></span>
@@ -98,8 +102,11 @@ const Home = ({ history }) => {
                   <span>(653)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/development"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-cms"></span>
@@ -113,8 +120,11 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/marketing"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-report"></span>
@@ -128,8 +138,11 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/mobile"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-app"></span>
@@ -143,8 +156,11 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/construction"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-helmet"></span>
@@ -158,8 +174,11 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/information"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-high-tech"></span>
@@ -173,8 +192,11 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/real estate"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-real-estate"></span>
@@ -188,8 +210,11 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            </Link>
+            <Link
+              to="/search/content writer"
+              className="col-xl-3 col-lg-3 col-md-4 col-sm-6"
+            >
               <div className="single-services text-center mb-30">
                 <div className="services-ion">
                   <span className="flaticon-content"></span>
@@ -203,7 +228,7 @@ const Home = ({ history }) => {
                   <span>(658)</span>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="row">
