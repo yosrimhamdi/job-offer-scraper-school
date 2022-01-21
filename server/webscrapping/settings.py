@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-i6(it2#f*%7&8w1#w)to4t8#ecpxq=53+po)+3hiz#aou%azr5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['react-django-res-api.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['react-django-res-api.herokuapp.com', 'localhost']
 
 # CORS ALLOWED ORIGINS
 CORS_ALLOWED_ORIGINS = [
