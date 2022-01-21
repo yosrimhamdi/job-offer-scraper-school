@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm-run-all -p server app",
-    "server": "cd server/ && python manage.py runserver",
+    "server": "python server/manage.py runserver",
     "app": "cd app/ && npm start",
     "template": "node bs.js"
   },
