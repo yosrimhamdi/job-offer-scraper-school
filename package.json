@@ -8,9 +8,6 @@
     "npm-run-all": "^4.1.5"
   },
   "scripts": {
-    "build": "npm-run-all -s install:server install:react start",
-    "install:server": "pip install -r requirements.txt",
-    "install:react": "npm i --prefix app",
     "start": "npm-run-all -p server app",
     "server": "python server/manage.py runserver",
     "app": "npm start --prefix app",
